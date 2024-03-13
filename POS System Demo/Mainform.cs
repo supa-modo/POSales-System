@@ -21,7 +21,9 @@ namespace POS_System_Demo
         {
             InitializeComponent();
             customizeDesign();
-            cn = new SqlConnection();
+            cn = new SqlConnection(dbcon.myConnection());
+            //cn.Open();
+            MessageBox.Show("Database is Connected");
         }
 
         #region panelSlide

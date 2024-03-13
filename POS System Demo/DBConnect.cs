@@ -11,7 +11,7 @@ namespace POS_System_Demo
         private string connString;
         public string myConnection()
         {
-            connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Administrator\Documents\Sql Databases\POSale_DB.mdf"";Integrated Security=True;Connect Timeout=30";
+            connString = @"Host=localhost;Username=postgres;Password=***********;Database=posale_db;Persist Security Info=True";
             return connString;
         }
     }
