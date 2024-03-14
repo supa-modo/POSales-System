@@ -8,21 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Npgsql;
 
 namespace POS_System_Demo
 {
     public partial class Mainform : Form
     {
 
-        SqlConnection cn = new SqlConnection();
-        SqlCommand cm = new SqlCommand();
+        NpgsqlConnection cn = new NpgsqlConnection();
+        NpgsqlCommand cm = new NpgsqlCommand();
         DBConnect dbcon = new DBConnect();
         public Mainform()
         {
             InitializeComponent();
             customizeDesign();
-            cn = new SqlConnection(dbcon.myConnection());
-            //cn.Open();
+            cn = new NpgsqlConnection(dbcon.myConnection());
+            cn.Open();
             MessageBox.Show("Database is Connected");
         }
 
