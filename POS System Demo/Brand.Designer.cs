@@ -107,6 +107,7 @@
             this.dgvBrand.RowHeadersVisible = false;
             this.dgvBrand.Size = new System.Drawing.Size(984, 490);
             this.dgvBrand.TabIndex = 0;
+            this.dgvBrand.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBrand_CellContentClick);
             // 
             // Column1
             // 

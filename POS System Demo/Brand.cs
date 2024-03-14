@@ -52,5 +52,20 @@ namespace POS_System_Demo
             BrandModule moduleForm = new BrandModule(this);
             moduleForm.ShowDialog();
         }
+
+        private void dgvBrand_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Updating and Deleting column records
+            string columnName = dgvBrand.Columns[e.ColumnIndex].Name;
+            if (columnName == "Edit")
+            {
+                if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cn.Open();
+                    cm = new NpgsqlCommand("DELETE FROM tbbrand WHERE id LIKE '"+ dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cn.Close() ;
+                }
+            }
+        }
     }
 }
