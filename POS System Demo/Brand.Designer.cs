@@ -155,6 +155,7 @@
             this.Name = "Brand";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brand";
+            this.Load += new System.EventHandler(this.Brand_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).EndInit();
             this.ResumeLayout(false);
