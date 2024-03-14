@@ -16,10 +16,12 @@ namespace POS_System_Demo
         NpgsqlConnection cn = new NpgsqlConnection();
         NpgsqlCommand cm = new NpgsqlCommand();
         DBConnect dbcon = new DBConnect();
-        public BrandModule()
+        Brand brand;
+        public BrandModule(Brand br)
         {
             InitializeComponent();
             cn = new NpgsqlConnection(dbcon.myConnection());
+            brand = br;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -39,13 +41,14 @@ namespace POS_System_Demo
 
                 if (MessageBox.Show("Are you sure you want to save this brand?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                     cn.Open();
+                    cn.Open();
                     cm = new NpgsqlCommand("INSERT INTO tbbrand(brand)VALUES(@brand)", cn);
                     cm.Parameters.AddWithValue("@brand", txtBrand.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("Record has been saved successfully.", "POS"); 
                     Clear();
+                    brand.LoadBrand();
                 }
             } 
             catch(Exception ex) {

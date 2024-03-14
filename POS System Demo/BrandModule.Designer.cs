@@ -37,6 +37,7 @@
             this.labelBrandName = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.labelId = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -138,12 +139,23 @@
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // labelId
+            // 
+            this.labelId.AutoSize = true;
+            this.labelId.Location = new System.Drawing.Point(23, 129);
+            this.labelId.Name = "labelId";
+            this.labelId.Size = new System.Drawing.Size(24, 19);
+            this.labelId.TabIndex = 6;
+            this.labelId.Text = "id";
+            this.labelId.Visible = false;
+            // 
             // BrandModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(650, 172);
+            this.Controls.Add(this.labelId);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.labelBrandName);
@@ -174,5 +186,6 @@
         private System.Windows.Forms.Label labelBrandName;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelId;
     }
 }
