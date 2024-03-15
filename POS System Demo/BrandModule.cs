@@ -61,6 +61,7 @@ namespace POS_System_Demo
             Clear();
         }
 
+        //Clearing the txtBrand field and resetting buttons
         public void Clear()
         {
             txtBrand.Clear();
@@ -75,7 +76,7 @@ namespace POS_System_Demo
             if (MessageBox.Show("Confirm brand update", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
-                cm = new NpgsqlCommand("UPDATE tbbrand SET brand = @brand WHERE id LIKE'" + labelId.Text + "'", cn);
+                cm = new NpgsqlCommand("UPDATE tbbrand SET brand = @brand WHERE id ='" + labelId.Text + "'", cn);
                 cm.Parameters.AddWithValue("@brand", txtBrand.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();

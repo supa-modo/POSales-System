@@ -50,6 +50,7 @@ namespace POS_System_Demo
         {
             
             BrandModule moduleForm = new BrandModule(this);
+            
             moduleForm.ShowDialog();
         }
 
@@ -62,31 +63,12 @@ namespace POS_System_Demo
                 if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new NpgsqlCommand("DELETE FROM tbbrand WHERE id LIKE '"+ dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cm = new NpgsqlCommand("DELETE FROM tbbrand WHERE id = '"+ dgvBrand[1, e.RowIndex].Value + "'", cn);
+                    cm.ExecuteNonQuery();
                     cn.Close() ;
                     MessageBox.Show("Brand has been successfully deleted.", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                //Parameterized Approach
-                //if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                //{
-                //    // Assuming cn is your NpgsqlConnection object
-                //    cn.Open();
-
-                //    // Create a parameterized query to delete the record
-                //    string sql = "DELETE FROM tbbrand WHERE id = @id";
-
-                //    // Assuming dgvBrand is your DataGridView object
-                //    NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-
-                //    // Assuming e.RowIndex is the index of the row you want to delete
-                //    cmd.Parameters.AddWithValue("@id", dgvBrand[1, e.RowIndex].Value);
-
-                //    // Execute the query
-                //    cmd.ExecuteNonQuery();
-
-                //    // Close the connection
-                //    cn.Close();
-                //}
+  
 
             }
             else if (columnName == "Edit")

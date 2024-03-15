@@ -114,6 +114,22 @@ namespace POS_System_Demo
 
         }
 
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if(activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            labelTitle.Text = childForm.Text;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
 
@@ -131,6 +147,7 @@ namespace POS_System_Demo
 
         private void buttonBrand_Click(object sender, EventArgs e)
         {
+            openChildForm(new Brand());
             hideSubMenu();
         }
 
