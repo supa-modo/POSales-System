@@ -64,6 +64,25 @@ namespace POS_System_Demo
         public void Clear()
         {
             txtBrand.Clear();
+            btnUpdate.Enabled = false;
+            btnSave.Enabled = true;
+            txtBrand.Focus();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //updating brand name
+            if (MessageBox.Show("Confirm brand update", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cn.Open();
+                cm = new NpgsqlCommand("UPDATE tbbrand SET brand = @brand WHERE id LIKE'" + labelId.Text + "'", cn);
+                cm.Parameters.AddWithValue("@brand", txtBrand.Text);
+                cm.ExecuteNonQuery();
+                cn.Close();
+                MessageBox.Show("Brand has been updated successfully", "POS");
+                Clear();
+                this.Dispose();
+            }
         }
     }
 }

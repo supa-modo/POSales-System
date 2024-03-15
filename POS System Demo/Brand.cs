@@ -57,15 +57,48 @@ namespace POS_System_Demo
         {
             //Updating and Deleting column records
             string columnName = dgvBrand.Columns[e.ColumnIndex].Name;
-            if (columnName == "Edit")
+            if (columnName == "Delete")
             {
                 if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("DELETE FROM tbbrand WHERE id LIKE '"+ dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
                     cn.Close() ;
+                    MessageBox.Show("Brand has been successfully deleted.", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                //Parameterized Approach
+                //if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                //{
+                //    // Assuming cn is your NpgsqlConnection object
+                //    cn.Open();
+
+                //    // Create a parameterized query to delete the record
+                //    string sql = "DELETE FROM tbbrand WHERE id = @id";
+
+                //    // Assuming dgvBrand is your DataGridView object
+                //    NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+
+                //    // Assuming e.RowIndex is the index of the row you want to delete
+                //    cmd.Parameters.AddWithValue("@id", dgvBrand[1, e.RowIndex].Value);
+
+                //    // Execute the query
+                //    cmd.ExecuteNonQuery();
+
+                //    // Close the connection
+                //    cn.Close();
+                //}
+
             }
+            else if (columnName == "Edit")
+            {
+                BrandModule brandModule = new BrandModule(this);
+                brandModule.labelId.Text = dgvBrand[1, e.RowIndex].Value.ToString();
+                brandModule.txtBrand.Text = dgvBrand[2, e.RowIndex].Value.ToString();
+                brandModule.btnSave.Enabled = false;
+                brandModule.btnUpdate.Enabled = true;
+                brandModule.ShowDialog();
+            }
+            LoadBrand();
         }
     }
 }
