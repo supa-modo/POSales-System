@@ -114,6 +114,7 @@ namespace POS_System_Demo
 
         }
 
+        //Adding child windows on to the main window to be part of it
         private Form activeForm = null;
         public void openChildForm(Form childForm)
         {
