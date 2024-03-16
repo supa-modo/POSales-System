@@ -107,6 +107,18 @@
     <Compile Include="BrandModule.Designer.cs">
       <DependentUpon>BrandModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="CategoryModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModule.Designer.cs">
+      <DependentUpon>CategoryModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catgeory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catgeory.Designer.cs">
+      <DependentUpon>Catgeory.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="Mainform.cs">
       <SubType>Form</SubType>
@@ -121,6 +133,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BrandModule.resx">
       <DependentUpon>BrandModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModule.resx">
+      <DependentUpon>CategoryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catgeory.resx">
+      <DependentUpon>Catgeory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainform.resx">
       <DependentUpon>Mainform.cs</DependentUpon>

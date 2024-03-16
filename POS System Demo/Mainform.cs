@@ -143,6 +143,7 @@ namespace POS_System_Demo
 
         private void buttonCategory_Click(object sender, EventArgs e)
         {
+            openChildForm(new Category());
             hideSubMenu();
         }
 
