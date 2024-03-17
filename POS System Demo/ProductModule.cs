@@ -100,5 +100,34 @@ namespace POS_System_Demo
         {
             Clear();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Confirm product Update?", "Update Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cn.Open();
+                    cm = new NpgsqlCommand("UPDATE tbproducts SET barcode=@barcode, pdescription=@pdescription, bid=@bid, cid=@cid, price=@price, reorder=@reorder WHERE productcode LIKE @productcode", cn);
+                    cm.Parameters.AddWithValue("@productcode", txtProductCode.Text);
+                    cm.Parameters.AddWithValue("@barcode", txtBarCode.Text);
+                    cm.Parameters.AddWithValue("@pdescription", txtDescription.Text);
+                    cm.Parameters.AddWithValue("@bid", comboBxBrand.SelectedValue);
+                    cm.Parameters.AddWithValue("@cid", comboBxCategory.SelectedValue);
+                    cm.Parameters.AddWithValue("@price", double.Parse(txtBoxPrice.Text));
+                    cm.Parameters.AddWithValue("@reorder", numericUpDnReorder.Value);
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("Product has been updated successfully", sTitle);
+                    Clear();
+                    this.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -104,6 +104,7 @@ namespace POS_System_Demo
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCancel
             // 
@@ -341,11 +342,11 @@ namespace POS_System_Demo
         private System.Windows.Forms.Label labelBrand;
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Label labelBarCode;
-        private System.Windows.Forms.ComboBox comboBxBrand;
-        private System.Windows.Forms.ComboBox comboBxCategory;
         public System.Windows.Forms.TextBox txtDescription;
         public System.Windows.Forms.TextBox txtBoxPrice;
-        private System.Windows.Forms.NumericUpDown numericUpDnReorder;
         public System.Windows.Forms.TextBox txtBarCode;
+        public System.Windows.Forms.ComboBox comboBxBrand;
+        public System.Windows.Forms.ComboBox comboBxCategory;
+        public System.Windows.Forms.NumericUpDown numericUpDnReorder;
     }
 }
