@@ -126,6 +126,18 @@
     <Compile Include="Mainform.Designer.cs">
       <DependentUpon>Mainform.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductModule.Designer.cs">
+      <DependentUpon>ProductModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Brand.resx">
@@ -142,6 +154,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mainform.resx">
       <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductModule.resx">
+      <DependentUpon>ProductModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

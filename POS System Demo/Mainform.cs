@@ -155,6 +155,7 @@ namespace POS_System_Demo
 
         private void buttonProductList_Click(object sender, EventArgs e)
         {
+            openChildForm(new Products());
             hideSubMenu();
         }
 

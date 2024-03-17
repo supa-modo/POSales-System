@@ -50,7 +50,7 @@
             this.dgvCategory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cocon", 12F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -69,7 +69,7 @@
             this.dgvCategory.Location = new System.Drawing.Point(0, 0);
             this.dgvCategory.Name = "dgvCategory";
             this.dgvCategory.RowHeadersVisible = false;
-            this.dgvCategory.Size = new System.Drawing.Size(984, 490);
+            this.dgvCategory.Size = new System.Drawing.Size(1117, 763);
             this.dgvCategory.TabIndex = 1;
             this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellContentClick);
             // 
@@ -78,7 +78,7 @@
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 53;
+            this.Column1.Width = 54;
             // 
             // Column2
             // 
@@ -86,7 +86,7 @@
             this.Column2.HeaderText = "Id";
             this.Column2.Name = "Column2";
             this.Column2.Visible = false;
-            this.Column2.Width = 48;
+            this.Column2.Width = 53;
             // 
             // Column3
             // 
@@ -116,45 +116,47 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.labelManageCategory);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 490);
+            this.panel1.Location = new System.Drawing.Point(0, 763);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 71);
+            this.panel1.Size = new System.Drawing.Size(1117, 78);
             this.panel1.TabIndex = 2;
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(917, 18);
+            this.btnAdd.Location = new System.Drawing.Point(1062, 21);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(45, 34);
+            this.btnAdd.Size = new System.Drawing.Size(45, 37);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // labelManageCategory
             // 
-            this.labelManageCategory.Font = new System.Drawing.Font("Cocon", 12F, System.Drawing.FontStyle.Underline);
+            this.labelManageCategory.Font = new System.Drawing.Font("Cocon-Regular", 13F);
             this.labelManageCategory.ForeColor = System.Drawing.Color.White;
             this.labelManageCategory.Image = ((System.Drawing.Image)(resources.GetObject("labelManageCategory.Image")));
             this.labelManageCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelManageCategory.Location = new System.Drawing.Point(9, 12);
+            this.labelManageCategory.Location = new System.Drawing.Point(9, 13);
             this.labelManageCategory.Name = "labelManageCategory";
-            this.labelManageCategory.Size = new System.Drawing.Size(111, 48);
+            this.labelManageCategory.Size = new System.Drawing.Size(125, 53);
             this.labelManageCategory.TabIndex = 0;
             this.labelManageCategory.Text = "Manage Category";
             this.labelManageCategory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Category
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(1117, 841);
             this.ControlBox = false;
             this.Controls.Add(this.dgvCategory);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Cocon", 12F);
+            this.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Category";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

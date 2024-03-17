@@ -85,5 +85,10 @@ namespace POS_System_Demo
                 this.Dispose();
             }
         }
+
+        private void BrandModule_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
