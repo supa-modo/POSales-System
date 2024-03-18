@@ -143,7 +143,7 @@
             this.labelManageCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelManageCategory.Location = new System.Drawing.Point(9, 13);
             this.labelManageCategory.Name = "labelManageCategory";
-            this.labelManageCategory.Size = new System.Drawing.Size(125, 53);
+            this.labelManageCategory.Size = new System.Drawing.Size(136, 53);
             this.labelManageCategory.TabIndex = 0;
             this.labelManageCategory.Text = "Manage Category";
             this.labelManageCategory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

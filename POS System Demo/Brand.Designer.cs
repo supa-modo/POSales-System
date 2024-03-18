@@ -78,7 +78,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(9, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 59);
+            this.label1.Size = new System.Drawing.Size(130, 59);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Brand";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
