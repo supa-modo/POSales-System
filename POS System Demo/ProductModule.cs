@@ -118,7 +118,7 @@ namespace POS_System_Demo
                     cm.Parameters.AddWithValue("@reorder", numericUpDnReorder.Value);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Product has been updated successfully", sTitle);
+                    MessageBox.Show("Product has been updated successfully", sTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
                     this.Dispose();
                 }

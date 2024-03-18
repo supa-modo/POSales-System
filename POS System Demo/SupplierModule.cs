@@ -42,7 +42,6 @@ namespace POS_System_Demo
             
 
             txtSupplierName.Focus();
-            txtSupplierName.Enabled = true;
             btnUpdate.Enabled = false;
             btnSave.Enabled = true;
 
@@ -56,7 +55,7 @@ namespace POS_System_Demo
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
-            {// Saving to the product table
+            {// Saving to the Suppliers' table
                 if (MessageBox.Show("Save this supplier?", "New Supplier", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
@@ -86,6 +85,7 @@ namespace POS_System_Demo
             Clear();
         }
 
+        //Updating existing suppliers records
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -94,6 +94,7 @@ namespace POS_System_Demo
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("UPDATE tbsuppliers SET supplier=@supplier, address=@address, contactPerson=@contactPerson, telephone1=@telephone1, telephone2=@telephone2 WHERE id = '" + labelId.Text +"'", cn);
+                    cm.Parameters.AddWithValue("@id", labelId.Text);
                     cm.Parameters.AddWithValue("@supplier", txtSupplierName.Text);
                     cm.Parameters.AddWithValue("@address", txtAddress.Text);
                     cm.Parameters.AddWithValue("@contactPerson", txtContactPerson.Text);
@@ -102,7 +103,7 @@ namespace POS_System_Demo
                     cm.Parameters.AddWithValue("@email", txtEmail.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Supplier has been updated successfully", sTitle);
+                    MessageBox.Show("Supplier has been updated successfully", sTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
                     this.Dispose();
                 }

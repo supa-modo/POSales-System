@@ -81,6 +81,7 @@
             this.dgvSupplier.RowHeadersVisible = false;
             this.dgvSupplier.Size = new System.Drawing.Size(1117, 563);
             this.dgvSupplier.TabIndex = 3;
+            this.dgvSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSupplier_CellContentClick);
             // 
             // panel1
             // 
@@ -104,6 +105,7 @@
             this.btnAdd.Size = new System.Drawing.Size(45, 37);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // labelManageSuppliers
             // 

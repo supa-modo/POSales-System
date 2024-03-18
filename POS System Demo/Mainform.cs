@@ -207,6 +207,7 @@ namespace POS_System_Demo
 
         private void buttonSupplier_Click(object sender, EventArgs e)
         {
+            openChildForm(new Supplier());
             hideSubMenu();
         }
  
