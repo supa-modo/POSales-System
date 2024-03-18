@@ -60,7 +60,7 @@ namespace POS_System_Demo
             string columnName = dgvBrand.Columns[e.ColumnIndex].Name;
             if (columnName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Brand", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Delete this record?", "Brand Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("DELETE FROM tbbrand WHERE id = '"+ dgvBrand[1, e.RowIndex].Value + "'", cn);

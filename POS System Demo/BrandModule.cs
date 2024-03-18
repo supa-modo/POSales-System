@@ -39,7 +39,7 @@ namespace POS_System_Demo
             //Inserting new brand to the brand table in the database
             try {
 
-                if (MessageBox.Show("Are you sure you want to save this brand?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Save this brand?", "New Brand", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("INSERT INTO tbbrand(brand)VALUES(@brand)", cn);

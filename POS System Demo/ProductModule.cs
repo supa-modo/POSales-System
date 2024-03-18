@@ -71,7 +71,7 @@ namespace POS_System_Demo
         {
             try
             {// Saving to the product table
-                if (MessageBox.Show("Are you sure you want to save this product?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Save this product?", "New Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("INSERT INTO tbproducts(productcode, barcode, pdescription, bid, cid, price, reorder)VALUES (@productcode, @barcode, @pdescription, @bid, @cid, @price, @reorder)", cn);

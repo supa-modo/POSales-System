@@ -125,10 +125,10 @@ namespace POS_System_Demo
             // labelPcode
             // 
             this.labelPcode.AutoSize = true;
-            this.labelPcode.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelPcode.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelPcode.Location = new System.Drawing.Point(47, 91);
             this.labelPcode.Name = "labelPcode";
-            this.labelPcode.Size = new System.Drawing.Size(126, 23);
+            this.labelPcode.Size = new System.Drawing.Size(121, 22);
             this.labelPcode.TabIndex = 10;
             this.labelPcode.Text = "Product Code :";
             // 
@@ -150,109 +150,109 @@ namespace POS_System_Demo
             // 
             // txtProductCode
             // 
-            this.txtProductCode.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.txtProductCode.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.txtProductCode.Location = new System.Drawing.Point(176, 87);
             this.txtProductCode.Name = "txtProductCode";
-            this.txtProductCode.Size = new System.Drawing.Size(186, 30);
+            this.txtProductCode.Size = new System.Drawing.Size(186, 29);
             this.txtProductCode.TabIndex = 8;
             // 
             // labelReorder
             // 
             this.labelReorder.AutoSize = true;
-            this.labelReorder.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelReorder.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelReorder.Location = new System.Drawing.Point(382, 289);
             this.labelReorder.Name = "labelReorder";
-            this.labelReorder.Size = new System.Drawing.Size(136, 23);
+            this.labelReorder.Size = new System.Drawing.Size(130, 22);
             this.labelReorder.TabIndex = 14;
             this.labelReorder.Text = "Re-Order Level :";
             // 
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
-            this.labelPrice.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelPrice.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelPrice.Location = new System.Drawing.Point(47, 289);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(61, 23);
+            this.labelPrice.Size = new System.Drawing.Size(56, 22);
             this.labelPrice.TabIndex = 15;
             this.labelPrice.Text = "Price :";
             // 
             // labelCategory
             // 
             this.labelCategory.AutoSize = true;
-            this.labelCategory.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelCategory.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelCategory.Location = new System.Drawing.Point(47, 238);
             this.labelCategory.Name = "labelCategory";
-            this.labelCategory.Size = new System.Drawing.Size(91, 23);
+            this.labelCategory.Size = new System.Drawing.Size(86, 22);
             this.labelCategory.TabIndex = 16;
             this.labelCategory.Text = "Category :";
             // 
             // labelBrand
             // 
             this.labelBrand.AutoSize = true;
-            this.labelBrand.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelBrand.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelBrand.Location = new System.Drawing.Point(47, 188);
             this.labelBrand.Name = "labelBrand";
-            this.labelBrand.Size = new System.Drawing.Size(66, 23);
+            this.labelBrand.Size = new System.Drawing.Size(63, 22);
             this.labelBrand.TabIndex = 17;
             this.labelBrand.Text = "Brand :";
             // 
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
-            this.labelDescription.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelDescription.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelDescription.Location = new System.Drawing.Point(47, 140);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(114, 23);
+            this.labelDescription.Size = new System.Drawing.Size(107, 22);
             this.labelDescription.TabIndex = 18;
             this.labelDescription.Text = "Description :";
             // 
             // labelBarCode
             // 
             this.labelBarCode.AutoSize = true;
-            this.labelBarCode.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.labelBarCode.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.labelBarCode.Location = new System.Drawing.Point(382, 91);
             this.labelBarCode.Name = "labelBarCode";
-            this.labelBarCode.Size = new System.Drawing.Size(85, 23);
+            this.labelBarCode.Size = new System.Drawing.Size(82, 22);
             this.labelBarCode.TabIndex = 19;
             this.labelBarCode.Text = "BarCode :";
             // 
             // comboBxBrand
             // 
-            this.comboBxBrand.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.comboBxBrand.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.comboBxBrand.FormattingEnabled = true;
             this.comboBxBrand.Location = new System.Drawing.Point(176, 184);
             this.comboBxBrand.Name = "comboBxBrand";
-            this.comboBxBrand.Size = new System.Drawing.Size(476, 31);
+            this.comboBxBrand.Size = new System.Drawing.Size(476, 30);
             this.comboBxBrand.TabIndex = 20;
             // 
             // comboBxCategory
             // 
-            this.comboBxCategory.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.comboBxCategory.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.comboBxCategory.FormattingEnabled = true;
             this.comboBxCategory.Location = new System.Drawing.Point(176, 233);
             this.comboBxCategory.Name = "comboBxCategory";
-            this.comboBxCategory.Size = new System.Drawing.Size(476, 31);
+            this.comboBxCategory.Size = new System.Drawing.Size(476, 30);
             this.comboBxCategory.TabIndex = 21;
             // 
             // txtDescription
             // 
-            this.txtDescription.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.txtDescription.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.txtDescription.Location = new System.Drawing.Point(176, 135);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(476, 30);
+            this.txtDescription.Size = new System.Drawing.Size(476, 29);
             this.txtDescription.TabIndex = 22;
             // 
             // txtBoxPrice
             // 
-            this.txtBoxPrice.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.txtBoxPrice.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.txtBoxPrice.Location = new System.Drawing.Point(176, 285);
             this.txtBoxPrice.Name = "txtBoxPrice";
-            this.txtBoxPrice.Size = new System.Drawing.Size(186, 30);
+            this.txtBoxPrice.Size = new System.Drawing.Size(186, 29);
             this.txtBoxPrice.TabIndex = 24;
             // 
             // numericUpDnReorder
             // 
-            this.numericUpDnReorder.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.numericUpDnReorder.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.numericUpDnReorder.Location = new System.Drawing.Point(517, 285);
             this.numericUpDnReorder.Maximum = new decimal(new int[] {
             1000,
@@ -265,7 +265,7 @@ namespace POS_System_Demo
             0,
             0});
             this.numericUpDnReorder.Name = "numericUpDnReorder";
-            this.numericUpDnReorder.Size = new System.Drawing.Size(135, 30);
+            this.numericUpDnReorder.Size = new System.Drawing.Size(135, 29);
             this.numericUpDnReorder.TabIndex = 25;
             this.numericUpDnReorder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDnReorder.Value = new decimal(new int[] {
@@ -276,10 +276,10 @@ namespace POS_System_Demo
             // 
             // txtBarCode
             // 
-            this.txtBarCode.Font = new System.Drawing.Font("Cocon-Regular", 12.5F);
+            this.txtBarCode.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.txtBarCode.Location = new System.Drawing.Point(466, 87);
             this.txtBarCode.Name = "txtBarCode";
-            this.txtBarCode.Size = new System.Drawing.Size(186, 30);
+            this.txtBarCode.Size = new System.Drawing.Size(186, 29);
             this.txtBarCode.TabIndex = 26;
             // 
             // ProductModule

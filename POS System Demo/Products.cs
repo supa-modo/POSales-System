@@ -104,7 +104,7 @@ namespace POS_System_Demo
             }
             else if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Delete this record?", "Delete Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("DELETE FROM tbproducts WHERE productcode LIKE '" + dgvProducts[1, e.RowIndex].Value + "'", cn);

@@ -101,6 +101,7 @@
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogout.Font = new System.Drawing.Font("Cocon-Regular", 13F);
             this.buttonLogout.ForeColor = System.Drawing.Color.DarkRed;
+            this.buttonLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLogout.Location = new System.Drawing.Point(0, 1076);
             this.buttonLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonLogout.Name = "buttonLogout";
@@ -108,7 +109,6 @@
             this.buttonLogout.Size = new System.Drawing.Size(200, 55);
             this.buttonLogout.TabIndex = 10;
             this.buttonLogout.Text = "Logout";
-            this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLogout.UseVisualStyleBackColor = false;
             // 
             // panelSubSetting

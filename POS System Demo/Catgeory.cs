@@ -59,7 +59,7 @@ namespace POS_System_Demo
             string colName = dgvCategory.Columns[e.ColumnIndex].Name;
             if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Category", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Delete this record?", "Category Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("DELETE FROM tbcategory WHERE id = '" + dgvCategory[1, e.RowIndex].Value + "'", cn);

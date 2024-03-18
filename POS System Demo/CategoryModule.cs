@@ -33,7 +33,7 @@ namespace POS_System_Demo
             //Inserting new category to the category table in the database
             try
             {
-                if (MessageBox.Show("Are you sure you want to add this category?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Add new category?", "New Category", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new NpgsqlCommand("INSERT INTO tbcategory(category)VALUES(@category)", cn);
