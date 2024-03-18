@@ -69,7 +69,7 @@
             this.dgvCategory.Location = new System.Drawing.Point(0, 0);
             this.dgvCategory.Name = "dgvCategory";
             this.dgvCategory.RowHeadersVisible = false;
-            this.dgvCategory.Size = new System.Drawing.Size(1117, 763);
+            this.dgvCategory.Size = new System.Drawing.Size(1117, 563);
             this.dgvCategory.TabIndex = 1;
             this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellContentClick);
             // 
@@ -86,7 +86,7 @@
             this.Column2.HeaderText = "Id";
             this.Column2.Name = "Column2";
             this.Column2.Visible = false;
-            this.Column2.Width = 53;
+            this.Column2.Width = 49;
             // 
             // Column3
             // 
@@ -116,7 +116,7 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.labelManageCategory);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 763);
+            this.panel1.Location = new System.Drawing.Point(0, 563);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1117, 78);
             this.panel1.TabIndex = 2;
@@ -152,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 841);
+            this.ClientSize = new System.Drawing.Size(1117, 641);
             this.ControlBox = false;
             this.Controls.Add(this.dgvCategory);
             this.Controls.Add(this.panel1);
