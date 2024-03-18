@@ -89,27 +89,27 @@
             this.panelSlide.Location = new System.Drawing.Point(0, 0);
             this.panelSlide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSlide.Name = "panelSlide";
-            this.panelSlide.Size = new System.Drawing.Size(217, 929);
+            this.panelSlide.Size = new System.Drawing.Size(217, 729);
             this.panelSlide.TabIndex = 0;
             this.panelSlide.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSlide_Paint);
             // 
             // buttonLogout
             // 
+            this.buttonLogout.BackColor = System.Drawing.Color.DarkCyan;
             this.buttonLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonLogout.FlatAppearance.BorderSize = 0;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogout.Font = new System.Drawing.Font("Cocon-Regular", 13F);
             this.buttonLogout.ForeColor = System.Drawing.Color.DarkRed;
-            this.buttonLogout.Location = new System.Drawing.Point(0, 1072);
+            this.buttonLogout.Location = new System.Drawing.Point(0, 1076);
             this.buttonLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
             this.buttonLogout.Size = new System.Drawing.Size(200, 55);
-            this.buttonLogout.TabIndex = 9;
+            this.buttonLogout.TabIndex = 10;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLogout.UseVisualStyleBackColor = true;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            this.buttonLogout.UseVisualStyleBackColor = false;
             // 
             // panelSubSetting
             // 
@@ -120,7 +120,7 @@
             this.panelSubSetting.Location = new System.Drawing.Point(0, 962);
             this.panelSubSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSubSetting.Name = "panelSubSetting";
-            this.panelSubSetting.Size = new System.Drawing.Size(200, 110);
+            this.panelSubSetting.Size = new System.Drawing.Size(200, 114);
             this.panelSubSetting.TabIndex = 8;
             // 
             // buttonStore
@@ -525,7 +525,7 @@
             this.panelMain.Location = new System.Drawing.Point(217, 49);
             this.panelMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1133, 880);
+            this.panelMain.Size = new System.Drawing.Size(1133, 680);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
@@ -534,14 +534,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(1350, 929);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelSlide);
             this.Font = new System.Drawing.Font("Cocon-Regular", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(1366, 968);
+            this.MinimumSize = new System.Drawing.Size(1278, 718);
             this.Name = "Mainform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Point of Sale";
@@ -584,12 +584,12 @@
         private System.Windows.Forms.Panel panelSubSetting;
         private System.Windows.Forms.Button buttonStore;
         private System.Windows.Forms.Button buttonUser;
-        private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Label labelRole;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label labelEdit;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonLogout;
     }
 }
 
