@@ -161,6 +161,12 @@
     <Compile Include="SupplierModule.Designer.cs">
       <DependentUpon>SupplierModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SupplierModule.resx">
       <DependentUpon>SupplierModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
