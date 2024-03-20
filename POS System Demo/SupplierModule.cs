@@ -16,7 +16,7 @@ namespace POS_System_Demo
         NpgsqlConnection cn = new NpgsqlConnection();
         NpgsqlCommand cm = new NpgsqlCommand();
         DBConnect dbcon = new DBConnect();
-        String sTitle = "Point of Sale_D";
+        string sTitle = "Point of Sale_D";
         Supplier supplier;
 
         public SupplierModule(Supplier sp)
