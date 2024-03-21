@@ -44,8 +44,8 @@ namespace POS_System_Demo
                     return;
                 }
                 cn.Open();
-                cm = new NpgsqlCommand("INSERT INTO tbusers(username, fullname, password, role, isactive)VALUES(@username, @fullname, @password, @role)", cn);
-                cm.Parameters.AddWithValue("@username", txtUsername.Text);
+                cm = new NpgsqlCommand("INSERT INTO tbusers(username, fullname, password, role)VALUES(@username, @fullname, @password, @role)", cn);
+                cm.Parameters.AddWithValue("@username", txtUsername.Text); 
                 cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
                 cm.Parameters.AddWithValue("@password", txtPassword.Text);
                 cm.Parameters.AddWithValue("@role", comboRole.Text);
@@ -60,12 +60,14 @@ namespace POS_System_Demo
             {
 
                 MessageBox.Show(ex.Message, "Warning");
+                
             }
         }
 
         private void btnAccCancel_Click(object sender, EventArgs e)
         {
             Clear();
+            cn.Close();
         }
     }
 }
