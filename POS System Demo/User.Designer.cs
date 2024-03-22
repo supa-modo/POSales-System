@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelManageProducts = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -102,7 +102,7 @@
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl1.Location = new System.Drawing.Point(106, 81);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(886, 438);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -131,7 +131,7 @@
             this.createUserPage.Text = "Create New User Account";
             this.createUserPage.VerticalScrollbarBarColor = true;
             this.createUserPage.VerticalScrollbarHighlightOnWheel = false;
-            this.createUserPage.VerticalScrollbarSize = 2;
+            this.createUserPage.VerticalScrollbarSize = 1;
             // 
             // btnAccCancel
             // 
@@ -284,7 +284,7 @@
             this.changePasswordPage.Text = "Change Password";
             this.changePasswordPage.VerticalScrollbarBarColor = true;
             this.changePasswordPage.VerticalScrollbarHighlightOnWheel = false;
-            this.changePasswordPage.VerticalScrollbarSize = 2;
+            this.changePasswordPage.VerticalScrollbarSize = 1;
             // 
             // btnChngCancel
             // 
@@ -322,7 +322,7 @@
             this.txtCurrentPwd.Location = new System.Drawing.Point(273, 128);
             this.txtCurrentPwd.Name = "txtCurrentPwd";
             this.txtCurrentPwd.Size = new System.Drawing.Size(466, 29);
-            this.txtCurrentPwd.TabIndex = 11;
+            this.txtCurrentPwd.TabIndex = 7;
             // 
             // label8
             // 
@@ -341,6 +341,7 @@
             this.txtNewPwd.Name = "txtNewPwd";
             this.txtNewPwd.Size = new System.Drawing.Size(466, 29);
             this.txtNewPwd.TabIndex = 9;
+            this.txtNewPwd.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -358,7 +359,8 @@
             this.txtConfirmNewPwd.Location = new System.Drawing.Point(273, 230);
             this.txtConfirmNewPwd.Name = "txtConfirmNewPwd";
             this.txtConfirmNewPwd.Size = new System.Drawing.Size(466, 29);
-            this.txtConfirmNewPwd.TabIndex = 7;
+            this.txtConfirmNewPwd.TabIndex = 11;
+            this.txtConfirmNewPwd.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -402,21 +404,21 @@
             this.enableAccountPage.Text = "Enable/Disable Account";
             this.enableAccountPage.VerticalScrollbarBarColor = true;
             this.enableAccountPage.VerticalScrollbarHighlightOnWheel = false;
-            this.enableAccountPage.VerticalScrollbarSize = 2;
+            this.enableAccountPage.VerticalScrollbarSize = 1;
             // 
             // dgvUser
             // 
             this.dgvUser.AllowUserToAddRows = false;
             this.dgvUser.BackgroundColor = System.Drawing.Color.White;
             this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cocon-Regular", 12F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cocon-Regular", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUser.ColumnHeadersHeight = 30;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
