@@ -16,7 +16,7 @@ namespace POS_System_Demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mainform());
+            Application.Run(new Cashier());
         }
     }
 }
