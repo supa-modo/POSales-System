@@ -203,6 +203,7 @@ namespace POS_System_Demo
 
         private void buttonSaleHistory_Click(object sender, EventArgs e)
         {
+            
             hideSubMenu();
         }
 
