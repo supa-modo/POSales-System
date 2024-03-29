@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnChngPwd = new System.Windows.Forms.Button();
@@ -65,7 +66,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelTransactionNo = new System.Windows.Forms.Label();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -328,7 +329,7 @@
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.labelTransactionNo);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(1017, 50);
             this.panel5.Name = "panel5";
@@ -348,12 +349,12 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Teal;
+            this.label1.BackColor = System.Drawing.Color.CadetBlue;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 31);
+            this.label1.Size = new System.Drawing.Size(247, 42);
             this.label1.TabIndex = 16;
             // 
             // label9
@@ -362,7 +363,7 @@
             this.label9.BackColor = System.Drawing.Color.Sienna;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Cocon-Regular", 17F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.Orange;
+            this.label9.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label9.Location = new System.Drawing.Point(0, 440);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(247, 50);
@@ -424,9 +425,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(11, 399);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 22);
+            this.label8.Size = new System.Drawing.Size(80, 22);
             this.label8.TabIndex = 9;
-            this.label8.Text = "Vatable :";
+            this.label8.Text = "VATable :";
             // 
             // label7
             // 
@@ -486,29 +487,31 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Transaction No";
             // 
-            // label3
+            // labelTransactionNo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "0000123456789";
+            this.labelTransactionNo.AutoSize = true;
+            this.labelTransactionNo.Location = new System.Drawing.Point(17, 80);
+            this.labelTransactionNo.Name = "labelTransactionNo";
+            this.labelTransactionNo.Size = new System.Drawing.Size(125, 22);
+            this.labelTransactionNo.TabIndex = 2;
+            this.labelTransactionNo.Text = "0000123456789";
             // 
             // dgvProducts
             // 
             this.dgvProducts.AllowUserToAddRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvProducts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvProducts.BackgroundColor = System.Drawing.Color.White;
             this.dgvProducts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Cocon-Regular", 12F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dgvProducts.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Cocon-Regular", 12F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvProducts.ColumnHeadersHeight = 40;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.No,
@@ -560,8 +563,8 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle15;
             this.Column3.HeaderText = "Price";
             this.Column3.Name = "Column3";
             this.Column3.Width = 70;
@@ -569,8 +572,8 @@
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle16;
             this.Column5.HeaderText = "Qty";
             this.Column5.Name = "Column5";
             this.Column5.Width = 59;
@@ -578,8 +581,8 @@
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle17;
             this.Column6.HeaderText = "Discount";
             this.Column6.Name = "Column6";
             this.Column6.Width = 101;
@@ -587,8 +590,8 @@
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle18;
             this.Column7.HeaderText = "Total";
             this.Column7.Name = "Column7";
             this.Column7.Width = 71;
@@ -677,7 +680,7 @@
         private System.Windows.Forms.DataGridViewImageColumn Reduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelTransactionNo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;

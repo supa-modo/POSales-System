@@ -28,6 +28,7 @@ namespace POS_System_Demo
         private void btnNewTrans_Click(object sender, EventArgs e)
         {
             slide(btnNewTrans);
+            getTransactionNo();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -63,6 +64,13 @@ namespace POS_System_Demo
         private void btnLogout_Click(object sender, EventArgs e)
         {
             slide(btnLogout);
+        }
+
+        public void getTransactionNo()
+        {
+            string sdate = DateTime.Now.ToString("yyyyMMddhhmmss");
+            string transNo = sdate + "1011";
+            labelTransactionNo.Text = transNo;
         }
 
        
