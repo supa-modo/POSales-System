@@ -358,7 +358,7 @@
   <data name="Increase.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAUNJREFUSEvdlMFKw0AURbMyPxKFRpM30QbBahuboKlj3fkXLV0o6KaIaDeKkdKF
+        DgAACw4BQL7hQQAAAUNJREFUSEvdlMFKw0AURbMyPxKFRpM30QbBahuboKlj3fkXLV0o6KaIaDeKkdKF
         LloUdGOhC4v6e888eJBMNoVJF+KBA+HembsKY/w/rJ/Y3PxuN8XXSUTStz09XeFaHzE/bnnzNip+tmOu
         9YHZkfRmEvNSxrU+MD2U4iPGvJRxrQ+8pcPvB5iXMq71gZdIitcQ81LG9WKsYWx64yAUk0akOA4SMd5H
         1TQrnKO7tMFzGd7zXl08NbCMtMFzGTCqBWK0i2WkDZ7LgMdaAMkOljLd4LkM596vw902lpE2eC7DGlqm
@@ -372,7 +372,7 @@
   <data name="Reduce.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAKBJREFUSEtjGNpAZds2do11qyxVN6xwIQWD9GitWsUGNQYVgCTUNiw/o75hxX9y
+        DgAACw4BQL7hQQAAAKBJREFUSEtjGNpAZds2do11qyxVN6xwIQWD9GitWsUGNQYVgCTUNiw/o75hxX9y
         sNr6FaexGq66YZk5Ng2kYJAZUOMQQH39cgdsiknCQDOgxiHAqMFwQBeDIw7t+d915QJRGKSWaINBGt79
         /EEUBqkl2mCy8ajBcExXg2lWCIGLTWDRh00DUXj98lN4y2SNjSsssBXm+DBID05DhwhgYAAAEUEBp7bL
         LZkAAAAASUVORK5CYII=
@@ -384,7 +384,7 @@
   <data name="Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAZdJREFUSEvFk71OwzAUhbOAxM8j8LMzsKQxZSFqUhj6IyYk3oEKCcqjsfAAIBAC
+        DgAACw4BQL7hQQAAAZdJREFUSEvFk71OwzAUhbOAxM8j8LMzsKQxZSFqUhj6IyYk3oEKCcqjsfAAIBAC
         lQJPAC1iTtKFVOae5LZJjdMkDHCkI7nu8Zfra9v4V8mjrcXRQWUdxpinfye5v73iOVbXc61bzxFj3xUS
         xjies7rIcLyYAlcceq74mMCyTB8ZBk6lzcvmi6o5TVeY52gHjujwcr2iSktAJ8aazMo/bXu1yPazTPCh
         tud+TVyo4eC4Lb+uLqXftJN5GmMO/6WzMLXxnHGJqNo7NQgAFPYeYjgZYyj6oJKnqm8YFwt3U9vbxp4M
